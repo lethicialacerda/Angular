@@ -12,8 +12,20 @@
 <div class="mensagem">
     <h1 class="titulo semNota">Não há nenhuma nota criada</h1>
 </div>  
-<div *ngFor="let nota of listaNotas">
-    <app-notas [nota] = "nota"></app-notas>
+<div *ngIf="listaNotas.length > 0, else semNotas">
+    <div *ngFor="let nota of listaNotas">
+        <app-notas [nota] = "nota"></app-notas>
+    </div>
 </div>
+<ng-template #semNotas>
+    <div>
+        <p>Não há notas =(</p>
+    </div>
+</ng-template>
+
+
+
+
+
 </section>
 </main>
