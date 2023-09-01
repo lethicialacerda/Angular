@@ -1,0 +1,19 @@
+<main>
+<section class="principal">
+    <div class="adicionar_nota">    
+        <img class="iconAdicionar" src="../../../assets/imagens/add_FILL0_wght200_GRAD0_opsz48.svg" alt="">
+        <button routerLink="/criar-nota" class="subtitulo">Criar nota</button>
+    </div>
+<div class="divisor">
+</div>
+<div class="minhasNotas">
+    <h1 class="titulo">Minhas notas</h1>
+</div>  
+<div class="mensagem">
+    <h1 class="titulo semNota">Não há nenhuma nota criada</h1>
+</div>  
+<div *ngFor="let nota of listaNotas">
+    <app-notas [nota] = "nota"></app-notas>
+</div>
+</section>
+</main>

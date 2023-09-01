@@ -1,0 +1,20 @@
+
+
+
+.menu_nav {
+    width: auto;
+    height: 60px;
+    background-color:rgba(108, 134, 157, 1);
+    display: flex;
+    border-radius: 20px;    
+}
+
+.menu_icon{
+    width: 35px;
+    height: 35px;
+    align-self: center;
+    padding: 20px;
+}
+
+
+

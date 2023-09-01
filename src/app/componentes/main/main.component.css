@@ -1,0 +1,73 @@
+.adicionar_nota{
+    width: 330px;
+    height: 200px;
+    border-radius: 12px;
+    background-color: rgba(200, 210, 217, 1);  
+    display: flex;
+    grid-column: 2;
+    grid-row: 6;
+}
+
+
+.principal{
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(10, 100px);
+    grid-template-rows: repeat(12, 50px);
+}
+
+
+
+.iconAdicionar{
+    width: 35px;
+    height: 35px;
+   align-self: flex-end;
+   padding-bottom: 20px;
+   padding-left: 10px;
+}
+
+.subtitulo{
+    border: none;
+    background-color: rgba(200, 210, 217, 1) ;
+    font-family: 'Quicksand';
+    font-weight: 100;
+    align-self: flex-end;
+}
+
+
+
+.divisor{
+    width: 1px;
+    height: 730px;
+    border-radius: 12px;
+    background-color: white;
+    grid-column: 6;
+    grid-row: 5;
+}
+
+
+
+
+.titulo{
+    font-family: 'Quicksand';
+    color: white;
+    font-weight: 100;
+    text-align: center;
+}
+
+.minhasNotas{
+    grid-column:7/9;
+    grid-row: 3;
+    justify-self: first baseline;
+}
+
+
+
+.mensagem{
+    grid-column: 6/12;
+    grid-row: 12;
+}
+
+.semNota{
+    opacity:0.3;
+}

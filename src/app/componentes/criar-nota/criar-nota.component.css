@@ -1,0 +1,19 @@
+.nova_nota{
+    height: 700px;
+    width:1200px;
+    border-radius: 30px;
+    background-color: rgba(223, 229, 232, 1);
+}
+
+.section_nota{
+    display: flex;
+    justify-content: center;
+    padding-top: 120px;
+}
+
+.input1{
+    background-color:rgba(223, 229, 232, 1); 
+    border: none;
+    padding-top: 30px;
+    border-radius: 30px;
+}
