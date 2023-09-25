@@ -8,24 +8,20 @@
 </div>
 <div class="minhasNotas">
     <h1 class="titulo">Minhas notas</h1>
-</div>  
-<div class="mensagem">
-    <h1 class="titulo semNota">Não há nenhuma nota criada</h1>
-</div>  
-<div *ngIf="listaNotas.length > 0, else semNotas">
-    <div *ngFor="let nota of listaNotas">
-        <app-notas [nota] = "nota"></app-notas>
-    </div>
-</div>
+</div> 
+
 <ng-template #semNotas>
-    <div>
-        <p>Não há notas =(</p>
+    <div class="mensagem">
+        <p class="titulo semNota">Não há notas =</p>
     </div>
 </ng-template>
 
+<div *ngIf="listaNotas.length > 0, else semNotas">
+    <div *ngFor="let nota of listaNotas">
+        <app-notas [nota]="nota"></app-notas>
+</div>
+ 
 
-
-
-
+</div>
 </section>
 </main>
