@@ -11,17 +11,15 @@ export class MainComponent {
 
   constructor(private service: NotaService) { }
 
+  listaNotas:Nota[] = [];
+
   ngOnInit(): void {
-    this.service.listar()
-  }
+    this.service.listar().subscribe((listaNotas) => {
 
-  listaNotas = [
-    {
-      titulo: "AAAAA",
-      conteudo: "Angular é estranho",
-      tipo: "tipo1"
-      }
-    ];
+    this.listaNotas = listaNotas
+
+  })
   }    
-
+  
+}
 
