@@ -1,6 +1,7 @@
 
    <section class="section_nota">
     <div class="nova_nota">
-        <input class="input1" type="text" placeholder=" ">
+        <input class="input1" type="text" [(ngModel)]="nota.titulo" placeholder=" ">
+        <button (click)="criarNota()">Criar Nota</button>
     </div>
    </section>
